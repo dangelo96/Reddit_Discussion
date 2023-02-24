@@ -1,6 +1,6 @@
 import json
 
-def retrieve_credentials() -> dict:
+def retrieve_credentials_from_json() -> dict:
     """
     Retrieves credentials to authenticate in Reddit.
 
