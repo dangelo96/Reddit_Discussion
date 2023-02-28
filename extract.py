@@ -58,7 +58,7 @@ def extract_data(topics: list) -> tuple:
     # Lists to store retrieved data
     data, labels = [], []
 
-    for idx_topic, topic in enumerate(topics):
+    for topic in topics:
         
         # Retrieving data from subreddit r/<topic>
         posts_from_subreddit: praw.models.ListingGenerator = reddit.subreddit(topic).new(limit=1000)
@@ -68,6 +68,6 @@ def extract_data(topics: list) -> tuple:
 
         # Adding captured data (labels stored as int)
         data.extend(filtered_posts)
-        labels.extend(len(filtered_posts) * [idx_topic])
+        labels.extend(len(filtered_posts) * [topic])
 
     return data, labels
