@@ -11,6 +11,13 @@ scikit-learn = "*"
 matplotlib = "*"
 seaborn = "*"
 notebook = "*"
+langdetect = "*"
+wordcloud = "*"
+textblob = "*"
+gensim = "*"
+nltk = "*"
+spacy = "*"
+pandoc = "*"
 
 [dev-packages]
 
