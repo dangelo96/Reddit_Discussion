@@ -1,4 +1,4 @@
-# Reddit_Discussion
+# Reddit Discussion
 A NLP project developed to automatically classify a Reddit discussion, given some topics. It contains from data extraction to model evaluation.
 
 ## Tools
